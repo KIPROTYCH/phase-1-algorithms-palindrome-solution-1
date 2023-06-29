@@ -1,5 +1,18 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const length = word.length;
+  let left = 0;
+  let right = length - 1;
+
+  while (left <= right) {
+    if (word[left] !== word[right]) {
+      return false;
+    }
+    left++;
+    right--;
+  }
+
+  return true;
 }
 
 /* 
